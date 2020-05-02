@@ -9,7 +9,7 @@ const Section: React.FC<IProps> = (props) => {
     const { type, children , fullScreen} = props;
     return (
         <section
-            className={`${type || "white"} ${fullScreen ? "fullScreen":null}`}
+            className={`${type || "white"} ${fullScreen ? "fullScreen":""}`}
         >
             {children}
         </section>
