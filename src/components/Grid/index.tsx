@@ -4,13 +4,14 @@ import "./style.scss";
 interface IPropsRow {
     center?: boolean,
     middle?: boolean,
-    children: React.ReactNode
+    children: React.ReactNode,
+    style?:object
 }
 
 const Row: React.FC<IPropsRow> = (props) => {
-    const {center, middle, children} = props;
+    const {center, middle, children, style} = props;
     return (
-        <div className={`row${center? " row-center":""}${middle?" row-middle":""}`}>
+        <div className={`row${center? " row-center":""}${middle?" row-middle":""}`} style={style}>
             {children}
         </div>
     );
@@ -19,13 +20,14 @@ const Row: React.FC<IPropsRow> = (props) => {
 
 interface IPropsCol {
     col: number,
-    children: React.ReactNode
+    children: React.ReactNode,
+    style?: object
 }
 
 const Col: React.FC<IPropsCol> = (props) => {
-    const { col, children} = props;
+    const { col, children, style} = props;
     return (
-        <div className={`col col-${col}`}>
+        <div className={`col col-${col}`} style={style}>
             {children}
         </div>
     );
@@ -36,14 +38,16 @@ interface IPropsGrid {
     col: number,
     center?: boolean,
     middle?: boolean,
-    items: object[]
+    items: object[],
+    style?: object
 }
 
 const Grid: React.FC<IPropsGrid> = (props) => {
+    const {items, style} = props;
     return (
-        <Row>
+        <Row style={style}>
             {
-                props.items.map(i => <Col col={props.col}>{i}</Col>)
+                items.map(i => <Col col={props.col}>{i}</Col>)
             }
         </Row>
     );

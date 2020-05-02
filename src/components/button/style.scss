@@ -24,28 +24,28 @@ button.dark{
 
 }
 
-button.purple-hover{
+button.hover-purple{
     &:hover{
         color:$color-white;
         background-color:$color-purple;
     }
 }
 
-button.dark-hover{
+button.hover-dark{
     &:hover{
         color:$color-white;
         background-color:$color-grey;
     }
 }
 
-button.white-hover{
+button.hover-white{
      &:hover{
         background-color:$color-off-white;
         color: $color-purple;
     }
 }
 
-button.offwhite-hover{
+button.hover-offwhite{
     &:hover{
         background-color:$color-off-white;
         color: $color-purple;
