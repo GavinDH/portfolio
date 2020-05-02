@@ -1,0 +1,56 @@
+@import "../../colors.scss";
+
+section{
+    padding:15px;
+}
+
+h1, h2, h3{
+ color:$color-grey;
+}
+
+a {
+    text-decoration: none;
+    color:$color-grey;
+    &:hover{
+        color:$color-black; 
+    }
+}
+
+section.off-white{
+    background-color:$color-off-white;
+}
+
+section.purple {
+    background-color:$color-purple;
+    color:$color-white;
+    h1, h2, h3{
+        color:$color-white;
+    }
+
+    a {
+        color:$color-white;
+        &:hover{
+            color:$color-off-white; 
+        }
+    }
+}
+
+section.dark {
+    background-color:$color-grey;
+    color:$color-white;
+    h1, h2, h3{
+        color:$color-white;
+    }
+
+    a {
+        color:$color-white;
+        &:hover{
+            color:$color-off-white; 
+        }
+    }
+}
+
+section.fullScreen{
+    min-height:400px;
+    height:100vh;
+}
