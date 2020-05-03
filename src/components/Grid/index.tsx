@@ -19,15 +19,15 @@ const Row: React.FC<IPropsRow> = (props) => {
 
 
 interface IPropsCol {
-    col: number,
+    size: number,
     children: React.ReactNode,
     style?: object
 }
 
 const Col: React.FC<IPropsCol> = (props) => {
-    const { col, children, style} = props;
+    const { size, children, style} = props;
     return (
-        <div className={`col col-${col}`} style={style}>
+        <div className={`col col-${size}`} style={style}>
             {children}
         </div>
     );
@@ -35,7 +35,7 @@ const Col: React.FC<IPropsCol> = (props) => {
 
 
 interface IPropsGrid {
-    col: number,
+    size: number,
     center?: boolean,
     middle?: boolean,
     items: object[],
@@ -47,7 +47,7 @@ const Grid: React.FC<IPropsGrid> = (props) => {
     return (
         <Row style={style}>
             {
-                items.map(i => <Col col={props.col}>{i}</Col>)
+                items.map(i => <Col size={props.size}>{i}</Col>)
             }
         </Row>
     );
