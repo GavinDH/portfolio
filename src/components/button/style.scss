@@ -11,6 +11,7 @@ button{
     font-size:15px;
     border-radius: 30px;
     cursor: pointer;
+    margin:2px;
 }
 
 button.white{
@@ -21,6 +22,12 @@ button.white{
 button.dark{
     background-color: $color-grey;
     color: $color-white;
+
+}
+
+button.off-white{
+    background-color: $color-off-white;
+    color: $color-grey;
 
 }
 
@@ -45,7 +52,7 @@ button.hover-white{
     }
 }
 
-button.hover-offwhite{
+button.hover-off-white{
     &:hover{
         background-color:$color-off-white;
         color: $color-purple;
