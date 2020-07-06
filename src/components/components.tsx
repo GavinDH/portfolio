@@ -3,6 +3,9 @@ import Button from "./button/index";
 import Grid, {Row, Col} from "./Grid/index";
 import Avatar from "./avatar/index";
 import { TableRow, TableType, TableContent, TableComponent} from "./table/index";
+import Timeline from "./timeline/index"
+import Pictogram from "./pictogram/index"
+import Wave from "./wave/index"
 
 export {
     Section,
@@ -15,4 +18,7 @@ export {
     TableType, 
     TableContent, 
     TableComponent,
+    Timeline,
+    Pictogram,
+    Wave
 };

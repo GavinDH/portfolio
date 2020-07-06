@@ -21,13 +21,15 @@ const Row: React.FC<IPropsRow> = (props) => {
 interface IPropsCol {
     size: number,
     children: React.ReactNode,
-    style?: object
+    style?: object,
+    addClass?:string,
+    scale?:string
 }
 
 const Col: React.FC<IPropsCol> = (props) => {
-    const { size, children, style} = props;
+    const { size, children, style, addClass, scale} = props;
     return (
-        <div className={`col col-${size}`} style={style}>
+        <div className={`col${scale ? " " + scale : ""} col-${size}${addClass ? " " + addClass:""}`} style={style}>
             {children}
         </div>
     );

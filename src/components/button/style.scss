@@ -12,53 +12,54 @@ button{
     border-radius: 30px;
     cursor: pointer;
     margin:2px;
-}
 
-button.white{
-    background-color: $color-white;
-    color: $color-purple;
-}
-
-button.dark{
-    background-color: $color-grey;
-    color: $color-white;
-
-}
-
-button.off-white{
-    background-color: $color-off-white;
-    color: $color-grey;
-
-}
-
-button.hover-purple{
-    &:hover{
-        color:$color-white;
-        background-color:$color-purple;
-    }
-}
-
-button.hover-dark{
-    &:hover{
-        color:$color-white;
-        background-color:$color-grey;
-    }
-}
-
-button.hover-white{
-     &:hover{
-        background-color:$color-off-white;
+    &.white{
+        background-color: $color-white;
         color: $color-purple;
     }
-}
 
-button.hover-off-white{
-    &:hover{
-        background-color:$color-off-white;
-        color: $color-purple;
+    &.dark{
+        background-color: $color-grey;
+        color: $color-white;
+
+    }
+
+    &.off-white{
+        background-color: $color-off-white;
+        color: $color-grey;
+
+    }
+
+    &.hover-purple{
+        &:hover{
+            color:$color-white;
+            background-color:$color-purple;
+        }
+    }
+
+    &.hover-dark{
+        &:hover{
+            color:$color-white;
+            background-color:$color-grey;
+        }
+    }
+
+    &.hover-white{
+        &:hover{
+            background-color:$color-off-white;
+            color: $color-purple;
+        }
+    }
+
+    &.hover-off-white{
+        &:hover{
+            background-color:$color-off-white;
+            color: $color-purple;
+        }
+    }
+
+    &:focus{
+        outline: none;
     }
 }
-
-
-
 
