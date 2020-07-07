@@ -6,6 +6,7 @@ import { TableRow, TableType, TableContent, TableComponent} from "./table/index"
 import Timeline from "./timeline/index"
 import Pictogram from "./pictogram/index"
 import Wave from "./wave/index"
+import ImageHover from "./imageHover/index"
 
 export {
     Section,
@@ -20,5 +21,6 @@ export {
     TableComponent,
     Timeline,
     Pictogram,
-    Wave
+    Wave,
+    ImageHover
 };
