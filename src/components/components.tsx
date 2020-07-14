@@ -7,6 +7,7 @@ import Timeline from "./timeline/index"
 import Pictogram from "./pictogram/index"
 import Wave from "./wave/index"
 import ImageHover from "./imageHover/index"
+import ImageModel from "./imageModal/index"
 
 export {
     Section,
@@ -22,5 +23,6 @@ export {
     Timeline,
     Pictogram,
     Wave,
-    ImageHover
+    ImageHover,
+    ImageModel
 };
