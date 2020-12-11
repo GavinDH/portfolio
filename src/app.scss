@@ -21,3 +21,15 @@ html {
         text-align: center;
         
     }
+
+    h1{
+        padding-bottom: 20px;
+        &.left{
+            text-align: left;
+        }
+
+        &.no-padding{
+            padding:0px;
+        }
+            
+    }
