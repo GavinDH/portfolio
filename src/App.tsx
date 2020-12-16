@@ -70,7 +70,7 @@ function App() {
           <Col size={5} scale="xl">
             <h1>Over Mij</h1>
             <div>
-              Mijn naam is Gavin den Hollander, 23 jaar, en ik woon in
+              Mijn naam is Gavin den Hollander, 24 jaar, en ik woon in
               Zwijndrecht. Vanaf kinds af aan ben ik altijd nieuwsgierig en
               leergierig geweest. Hierdoor wilde ik altijd weten hoe iets werkt en
               hoe dingen gemaakt worden. Dit geldt ook voor websites en met veel
@@ -93,7 +93,7 @@ function App() {
       <Wave color="454545" />
       <Section
         type="dark"
-        style={{ minHeight: 200, paddingTop: 60, paddingBottom: 60 }}
+        style={{ minHeight: 200, paddingTop: 20, paddingBottom: 60 }}
         refProp={refExperience}
       >
         <Row center>
@@ -124,6 +124,7 @@ function App() {
         <Row center>
           <Col size={5} scale="xl" addClass="align-items hide-1290">
             <h1 className="left">Curriculum vitae</h1>
+            <ImageHover image={require("./images/quintor.jpeg")}>Minor Cyber Security</ImageHover>
             <ImageHover image={require("./images/quintor.jpeg")}>Minor Fullstack Java</ImageHover>
             <ImageHover image={require("./images/cofano.jpg")}>3de jaars Stage Cofano software solutions</ImageHover>
             <ImageHover image={require("./images/printing.jpg")}>Eigenaar CT Innovations</ImageHover>

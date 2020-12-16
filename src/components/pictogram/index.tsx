@@ -12,8 +12,8 @@ const Pictogram: React.FC<IProps> = (props) => {
         // eslint-disable-next-line jsx-a11y/alt-text
         <img
             src={`${url}`}
-            width={`${width ? width : "60"}px`}
-            style={{padding:15}}
+            width={`${width ? width : "50"}px`}
+            style={{padding:10}}
             onClick={click ? () =>click() : ()=>{}}
         />
     );
