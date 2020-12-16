@@ -1,0 +1,28 @@
+.image-hover{
+
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-bottom:20px;
+
+    .child{
+        padding:10px;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,.6);
+        transition: .5s ease;
+        opacity: 0;
+        text-align: center;
+        color:white;
+    }
+
+    &:hover .child {
+    opacity: 1;
+    }
+}

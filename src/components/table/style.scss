@@ -1,0 +1,23 @@
+.table-view
+{
+    display:table;
+    width:100%;
+}
+.table-view-row
+{
+    display:table-row;
+}
+.table-view-row > div
+{
+    display: table-cell;
+    
+}
+.table-view-name 
+{
+    text-align:left;
+
+}
+.table-view-type
+{
+
+}

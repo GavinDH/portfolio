@@ -1,0 +1,111 @@
+@import "../../colors.scss";
+
+.timeline-container {
+
+  position: relative;
+  ul {
+    margin: 0;
+    margin-top: 100px;
+    list-style: none;
+    position: relative;
+    padding: 1px 100px;
+    color: #fff;
+    font-size: 14px;
+
+    &:before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      border-left: 2px dashed $color-purple;
+    }
+
+    li {
+      position: relative;
+      margin-left: 30px;
+      background-color:$color-purple;
+      padding: 14px;
+      border-radius: 6px;
+      width: 100%;
+      max-width:250px;
+
+
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+
+      > span {
+        width: 2px;
+        height: 100%;
+        background: $color-purple;
+        left: -30px;
+        top: 0;
+        position: absolute;
+
+        &:before, &:after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          border: 2px solid $color-purple;
+          position: absolute;
+          background: $color-white;
+          left: -5px;
+          top: 0;
+        }
+      }
+
+      span:after {
+        top: 100%;
+      }
+
+      > div {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  div {
+    .timeline-title, .timeline-type {
+      font-weight: 600;
+    }
+
+    .timeline-info {
+      font-weight: 300;
+    }
+
+    > div {
+      margin-top: 5px;
+    }
+  }
+
+ 
+  span.timeline-number {
+    height: 100%;
+
+    span {
+      position: absolute;
+      font-size: 12px;
+      left: -45px;
+      font-weight: bold;
+      margin-top:-2px;
+
+
+      &:first-child {
+        top: 0;
+      }
+
+      &:last-child {
+        top: 100%;
+      }
+    }
+       span.dark{
+    color:$color-grey
+  }
+  }
+
+   span.dark{
+    color:$color-grey
+  }
+
+}

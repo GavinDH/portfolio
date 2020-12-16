@@ -1,0 +1,35 @@
+html {
+    scroll-behavior:smooth;
+} 
+    @media only screen and (max-width: 609px) {
+        .banner-ItemsHolder{
+            text-align: center;
+
+            h1{
+                text-align: center;
+            }
+        }
+    }
+
+     @media only screen and (max-width: 1290px) {
+        .hide-1290{
+            display:none!important;
+        }
+    }
+
+    .align-items{
+        text-align: center;
+        
+    }
+
+    h1{
+        padding-bottom: 20px;
+        &.left{
+            text-align: left;
+        }
+
+        &.no-padding{
+            padding:0px;
+        }
+            
+    }

@@ -1,0 +1,65 @@
+@import "../../colors.scss";
+
+button{
+    background-color: $color-purple; 
+    border: none;
+    color: $color-white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:15px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin:2px;
+
+    &.white{
+        background-color: $color-white;
+        color: $color-purple;
+    }
+
+    &.dark{
+        background-color: $color-grey;
+        color: $color-white;
+
+    }
+
+    &.off-white{
+        background-color: $color-off-white;
+        color: $color-grey;
+
+    }
+
+    &.hover-purple{
+        &:hover{
+            color:$color-white;
+            background-color:$color-purple;
+        }
+    }
+
+    &.hover-dark{
+        &:hover{
+            color:$color-white;
+            background-color:$color-grey;
+        }
+    }
+
+    &.hover-white{
+        &:hover{
+            background-color:$color-off-white;
+            color: $color-purple;
+        }
+    }
+
+    &.hover-off-white{
+        &:hover{
+            background-color:$color-off-white;
+            color: $color-purple;
+        }
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
